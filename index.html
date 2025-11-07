@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>منصة قطاع عمليات وسط الرياض</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body dir="rtl">
+  <!-- Announcement bar (will be injected/hidden by JS) -->
+  <div id="announcement" class="announcement" style="display:none"></div>
+
+  <!-- Top navbar -->
+  <header class="topbar">
+    <div class="brand">المنصة</div>
+    <nav class="nav" id="top-nav">
+      <a href="#" id="nav-home">الصفحة الرئيسية</a>
+      <a href="#featured" id="nav-featured">لوحات التميز</a>
+      <a href="admin.html" id="nav-admin">لوحة التحكم</a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="container">
+    <section id="hero" class="hero">
+      <h1 id="site-title">مرحبا بك في المنصة</h1>
+      <p id="site-sub">هنا تظهر لوحات التميز والإعلانات.</p>
+    </section>
+
+    <section id="featured" class="featured">
+      <h2>لوحات التميز</h2>
+      <div id="featured-list" class="featured-list">
+        <!-- Cards injected here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <small>منصة قطاع عمليات وسط الرياض</small>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

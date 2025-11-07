@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>لوحة التحكم - المنصة</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body dir="rtl">
+  <header class="topbar">
+    <div class="brand">لوحة التحكم</div>
+    <nav class="nav">
+      <a href="index.html">الصفحة الرئيسية</a>
+      <a id="btn-logout" href="#">تسجيل الخروج</a>
+    </nav>
+  </header>
+
+  <main class="container admin-container">
+    <section class="auth-panel" id="auth-panel">
+      <h2>تسجيل دخول مشرف</h2>
+      <input type="email" id="admin-email" placeholder="البريد الإلكتروني" />
+      <input type="password" id="admin-password" placeholder="كلمة المرور" />
+      <button id="btn-login">تسجيل الدخول</button>
+      <p>يجب أن تنشئ حساب مشرف من Firebase Console للمرة الأولى.</p>
+    </section>
+
+    <section id="admin-ui" style="display:none">
+      <h2>إعدادات الموقع</h2>
+
+      <!-- Theme controls -->
+      <div class="card">
+        <h3>الثيم والألوان</h3>
+        <label>لون الخلفية: <input type="color" id="theme-bg" /></label>
+        <label>لون النص: <input type="color" id="theme-text" /></label>
+        <label>لون الأزرار: <input type="color" id="theme-accent" /></label>
+        <button id="save-theme">حفظ الألوان</button>
+      </div>
+
+      <!-- Links management -->
+      <div class="card">
+        <h3>الروابط (شريط التنقل)</h3>
+        <input id="new-link-title" placeholder="عنوان الرابط" />
+        <input id="new-link-url" placeholder="رابط (مثال: https://... أو #id)" />
+        <button id="add-link">إضافة رابط</button>
+        <ul id="links-list"></ul>
+      </div>
+
+      <!-- Announcement -->
+      <div class="card">
+        <h3>الإعلان الأعلى</h3>
+        <input id="announce-text" placeholder="نص الإعلان" />
+        <label><input type="checkbox" id="announce-visible" /> اظهار الإعلان</label>
+        <button id="save-announcement">حفظ الإعلان</button>
+      </div>
+
+      <!-- Featured uploads -->
+      <div class="card">
+        <h3>لوحات التميز (رفع صور)</h3>
+        <input type="file" id="featured-image" accept="image/*" />
+        <input id="featured-title" placeholder="عنوان اللوحة" />
+        <button id="upload-featured">رفع وإضافة</button>
+        <div id="featured-admin-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
