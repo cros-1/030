@@ -5,12 +5,12 @@ import { getStorage, ref as sRef, getDownloadURL } from "https://www.gstatic.com
 
 // === ضع هنا تكوين Firebase الخاص بك ===
 const firebaseConfig = {
-  apiKey: "REPLACE_ME",
-  authDomain: "REPLACE_ME",
-  projectId: "REPLACE_ME",
-  storageBucket: "REPLACE_ME",
-  messagingSenderId: "REPLACE_ME",
-  appId: "REPLACE_ME"
+  apiKey: "AIzaSyCHUCZu_knCbDLkHOIuJok_mRxwL7f7WxA",
+  authDomain: "ssds-3881b.firebaseapp.com",
+  projectId: "ssds-3881b",
+  storageBucket: "ssds-3881b.firebasestorage.app",
+  messagingSenderId: "528209140205",
+  appId: "1:528209140205:web:d2f88816da6e3210dcefe4"
 };
 
 const app = initializeApp(firebaseConfig);
